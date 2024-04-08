@@ -617,6 +617,7 @@ class Manager extends FreePBX_Helpers implements BMO
 					"eventfilter = Event: UserEvent",
 					"eventfilter = Event: FullyBooted",
 					"eventfilter = Event: MixMonitorStart",
+					"eventfilter = Event: BridgeEnter",
 				),
 				"srtapi_queue_events" => array(
 					"read = system,user,call,agent",
