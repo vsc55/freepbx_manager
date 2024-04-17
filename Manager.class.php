@@ -217,7 +217,7 @@ class Manager extends FreePBX_Helpers implements BMO
 				{
 					$name 		  = $form['nameManager'];
 					$secret 	  = $form['secretManager'];
-					$deny 		  = $form['denyManager'];
+					$deny 		  = str_replace("&amp;","&",$form['denyManager']);
 					$permit		  = $form['permitManager'];
 					$writetimeout = $form['writetimeoutManager'];
 					$rights 	  = $this->format_in($form);
